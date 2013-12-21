@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\PROGRAM FILES\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\PROGRAM FILES\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'marionette',
+1 verbose cli   'backbone.marionette',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.3.8
+3 info using node@v0.10.18
+4 verbose node symlink D:\PROGRAM FILES\nodejs\\node.exe
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'marionette', null ]
+7 verbose cache add name=undefined spec="marionette" args=["marionette",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'marionette',
+8 verbose parsed url   path: 'marionette',
+8 verbose parsed url   href: 'marionette' }
+9 verbose cache add [ 'backbone.marionette', null ]
+10 verbose cache add name=undefined spec="backbone.marionette" args=["backbone.marionette",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'backbone.marionette',
+11 verbose parsed url   path: 'backbone.marionette',
+11 verbose parsed url   href: 'backbone.marionette' }
+12 silly lockFile 297b35c5-marionette marionette
+13 verbose lock marionette C:\Users\WEB\AppData\Roaming\npm-cache\297b35c5-marionette.lock
+14 silly lockFile 902d016f-backbone-marionette backbone.marionette
+15 verbose lock backbone.marionette C:\Users\WEB\AppData\Roaming\npm-cache\902d016f-backbone-marionette.lock
+16 silly lockFile 297b35c5-marionette marionette
+17 silly lockFile 297b35c5-marionette marionette
+18 silly lockFile 902d016f-backbone-marionette backbone.marionette
+19 silly lockFile 902d016f-backbone-marionette backbone.marionette
+20 verbose addNamed [ 'marionette', '' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile a77c0283-marionette marionette@
+23 verbose lock marionette@ C:\Users\WEB\AppData\Roaming\npm-cache\a77c0283-marionette.lock
+24 verbose addNamed [ 'backbone.marionette', '' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile 66b7b4a2-backbone-marionette backbone.marionette@
+27 verbose lock backbone.marionette@ C:\Users\WEB\AppData\Roaming\npm-cache\66b7b4a2-backbone-marionette.lock
+28 silly addNameRange { name: 'marionette', range: '*', hasData: false }
+29 verbose url raw marionette
+30 verbose url resolving [ 'https://registry.npmjs.org/', './marionette' ]
+31 verbose url resolved https://registry.npmjs.org/marionette
+32 info trying registry request attempt 1 at 01:13:43
+33 http GET https://registry.npmjs.org/marionette
+34 silly addNameRange { name: 'backbone.marionette', range: '*', hasData: false }
+35 verbose url raw backbone.marionette
+36 verbose url resolving [ 'https://registry.npmjs.org/', './backbone.marionette' ]
+37 verbose url resolved https://registry.npmjs.org/backbone.marionette
+38 info trying registry request attempt 1 at 01:13:43
+39 http GET https://registry.npmjs.org/backbone.marionette
+40 http 404 https://registry.npmjs.org/marionette
+41 silly registry.get cb [ 404,
+41 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+41 silly registry.get     date: 'Sat, 21 Dec 2013 01:13:52 GMT',
+41 silly registry.get     'content-type': 'application/json',
+41 silly registry.get     'content-length': '52',
+41 silly registry.get     'cache-control': 'must-revalidate' } ]
+42 silly lockFile a77c0283-marionette marionette@
+43 silly lockFile a77c0283-marionette marionette@
+44 error 404 'marionette' is not in the npm registry.
+44 error 404 You should bug the author to publish it
+44 error 404
+44 error 404 Note that you can also install from a
+44 error 404 tarball, folder, or http url, or git url.
+45 error System Windows_NT 6.1.7600
+46 error command "D:\\PROGRAM FILES\\nodejs\\\\node.exe" "D:\\PROGRAM FILES\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "marionette" "backbone.marionette" "--save-dev"
+47 error cwd D:\mednix\picture-sharing-script\public
+48 error node -v v0.10.18
+49 error npm -v 1.3.8
+50 error code E404
+51 verbose exit [ 1, true ]

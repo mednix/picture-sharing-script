@@ -1,0 +1,28 @@
+{
+  "name": "picture",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mednix/picture-sharing-script",
+  "authors": [
+    "mednix <med.programmer@gmail.com>"
+  ],
+  "description": "picture sharing website",
+  "main": "main.js",
+  "keywords": [
+    "picture",
+    "image"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone.marionette": "~1.4.1",
+    "jquery": "~2.0.3",
+    "modernizr": "~2.7.1"
+  }
+}

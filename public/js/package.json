@@ -18,5 +18,9 @@
     "picture"
   ],
   "author": "mednix",
-  "license": "BSD-2-Clause"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "bower":"*"
+  }
 }
