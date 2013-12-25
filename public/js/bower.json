@@ -23,6 +23,7 @@
   "dependencies": {
     "backbone.marionette": "~1.4.1",
     "jquery": "~2.0.3",
-    "modernizr": "~2.7.1"
+    "modernizr": "~2.7.1",
+    "handlebars": "~1.2.0"
   }
 }

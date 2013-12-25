@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
