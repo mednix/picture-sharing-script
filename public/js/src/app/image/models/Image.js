@@ -1,5 +1,5 @@
-App.module("Image.Views.Image",function(module, App, Backbone, Marionette, $, _){
-    return Backbone.Model.extend({
+App.module("Image",function(Module, App, Backbone, Marionette, $, _){
+    Module.Models.Image=Backbone.Model.extend({
         defaults:{
             src:"",
             title:"",
