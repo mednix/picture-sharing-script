@@ -35,7 +35,7 @@
 		}
 		catch (e) {}
 		if (!template || template.length === 0) {
-			templateUrl = Marionette.Handlebars.path + module + "/templates/" + templateName+"/"+ Marionette.Handlebars.extension;
+			templateUrl = Marionette.Handlebars.path + module + "/templates/" + templateName+ Marionette.Handlebars.extension;
 			Marionette.$.ajax({
 				url: templateUrl,
 				success: function(data) {
@@ -54,4 +54,4 @@
 		return Handlebars.compile(rawTemplate);
 	};
 
-}(Handlebars, Marionette));
+}(Handlebars, Backbone.Marionette));

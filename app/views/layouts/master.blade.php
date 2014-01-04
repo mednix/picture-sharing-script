@@ -9,22 +9,25 @@
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr/modernizr.js"></script>
+
 </head>
 <body>
 <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<div id="app" class="container">
+<div id="main">
     @yield('content')
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery/jquery.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+
+<script src="js/dist/deps.js"></script>
+<script src="js/dist/app.js"></script>
+<script src="js/dist/common.js"></script>
+<script src="js/dist/displayer.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

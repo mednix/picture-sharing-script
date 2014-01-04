@@ -5,18 +5,49 @@ module.exports = function(grunt) {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
-            build: {
-                src: ['src/app/image/**/*.js'],
-                dest: 'build/image.js'
+            deps:{
+                src: [
+                    'vendor/handlebars/handlebars.js',
+                    'vendor/underscore/underscore.js',
+                    'vendor/backbone/backbone.js',
+                    'vendor/backbone.marionette/lib/backbone.marionette.js',
+                    'plugins/marionette.handlebars.js'
+                ],
+                dest: 'dist/deps.js'
+            },
+            common:{
+                src: ['src/app/common/**/*.js'],
+                dest: 'dist/common.js'
+            },
+            app:{
+                src: ['src/app/*.js'],
+                dest: 'dist/app.js'
+            },
+            displayer: {
+                src: ['src/app/displayer/**/*.js'],
+                dest: 'dist/displayer.js'
             }
+
         },
         uglify: {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
-            build: {
-                src: 'build/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>.min.js'
+            deps:{
+                src: 'dist/deps.js',
+                dest: 'dist/deps.min.js'
+            },
+            common: {
+                src: 'dist/common.js',
+                dest: 'dist/common.min.js'
+            },
+            app: {
+                src: 'dist/app.js',
+                dest: 'dist/app.min.js'
+            },
+            displayer:{
+                src: 'dist/displayer.js',
+                dest: 'dist/displayer.min.js'
             }
         },
         karma: {
@@ -48,20 +79,19 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ['src/**/*.js','tests/**/*.js'],
-                tasks: ['jshint'],
+                tasks: ['build'],
                 options: {
                     spawn: false
 
                 }
             },
-            css:{
+            sass:{
                 files: '**/*.sass',
                 tasks: ['sass'],
                 livereload: true
             }
         }
     });
-
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -69,6 +99,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-contrib-sass');
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
-
+    grunt.registerTask('build', ['concat', 'uglify']);
+    grunt.registerTask('dev', ['watch:js']);
+    grunt.registerTask('default', ['build']);
 };
